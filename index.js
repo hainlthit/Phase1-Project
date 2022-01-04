@@ -3,9 +3,9 @@ console.log("hello")
 fetchData()
 
 function fetchData() {
-    fetch("http://localhost:3000/ant00")
+    fetch("http://localhost:3000/villagers")
     .then(resp => resp.json())
-    .then(data => renderVillager(data))
+    .then(data => data.forEach(renderVillager))
 }
 
 function renderVillager(villager) {
