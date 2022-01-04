@@ -10,7 +10,9 @@
       "species": "Cat",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/44",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/44"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/44",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 2,
@@ -22,7 +24,9 @@
       "species": "Cat",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/52",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/52"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/52",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 3,
@@ -34,7 +38,9 @@
       "species": "Cub",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/66",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/66"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/66",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 4,
@@ -46,7 +52,9 @@
       "species": "Cub",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/67",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/67"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/67",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 5,
@@ -58,7 +66,9 @@
       "species": "Dog",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/111",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/111"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/111",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 6,
@@ -70,7 +80,9 @@
       "species": "Dog",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/115",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/115"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/115",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 7,
@@ -82,7 +94,9 @@
       "species": "Dog",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/119",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/119"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/119",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 8,
@@ -94,7 +108,9 @@
       "species": "Duck",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/127",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/127"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/127",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 9,
@@ -106,7 +122,9 @@
       "species": "Duck",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/142",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/142"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/142",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 10,
@@ -118,7 +136,9 @@
       "species": "Koala",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/222",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/222"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/222",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 11,
@@ -130,7 +150,9 @@
       "species": "Koala",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/224",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/224"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/224",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 12,
@@ -142,7 +164,9 @@
       "species": "Rabbit",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/319",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/319"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/319",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 13,
@@ -154,7 +178,9 @@
       "species": "Rabbit",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/320",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/320"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/320",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 14,
@@ -166,7 +192,9 @@
       "species": "Squirrel",
       "gender": "Female",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/370",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/370"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/370",
+      "likes": "0",
+      "comments": "Cool"
     },
     {
       "id": 15,
@@ -178,7 +206,9 @@
       "species": "Squirrel",
       "gender": "Male",
       "icon_uri": "https://acnhapi.com/v1/icons/villagers/372",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/372"
+      "image_uri": "https://acnhapi.com/v1/images/villagers/372",
+      "likes": "0",
+      "comments": "Cool"
       }
     ]
   }

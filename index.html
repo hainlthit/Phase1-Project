@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script defer src="/index.js"></script> 
 </head>
 
@@ -22,12 +23,17 @@
     <div id="villager-detail">
       <img class="villager-image" alt="PLACEHOLDER" />
       <h2 class="name">Insert Villager Name</h2>
+      <p class="gender">Gender</p>
+      <p class="species">Species</p>
+      <p class="personality">Personality</p>
+      <p class="birthday">Birthday</p>
+      <p class="likes">Likes</p>
+
+      <button class="likeBtn">Like</button>
+      <button class="dislikeBtn">Dislike</button>
     </div>
   
-    <button>LIKE</button> <button>DISLIKE</button>
-    <p>
-      <span id='rating-display'>Insert rating here</span> / 10
-    </p>
+
     <h3>Comment:</h3>
     <p id='comment-display'>
       Insert comment here
@@ -35,17 +41,12 @@
   
     <!-- new villager form -->
     <form id="new-villager">
-      <h4>Add Your Favorite Villager</h4>
-      <label for="name">Name: </label>
-      <input type="text" name="name" id="new-name" />
-      <label for="restaurant">Restaurant: </label>
-      <input type="text" name="restaurant" id="new-restaurant" />
-      <label for="image">Image: </label>
-      <input type="text" name="image" id="new-image" />
-      <label for="rating">Rating: </label>
-      <input type="number" name="rating" id="new-rating" />
+      <h4>Leave a Comment</h4>
+      <label for="name">Your name: </label>
+      <input type="text" name="name" id="new-name" /><br>
+      
       <label for="new-comment">Comment: </label>
-      <textarea name="new-comment" id="new-comment"></textarea>
+      <textarea name="new-comment" id="new-comment"></textarea><br>
       <input type="submit" value="Create" />
     </form>
   
