@@ -1,5 +1,3 @@
-console.log("hello")
-
 fetchData()
 
 function fetchData() {
@@ -20,10 +18,7 @@ function renderVillager(villager) {
     //villagerMenu.appendChild(villagerName)
     // consider mouse-over event to show names
 
-    villagerImage.addEventListener('click', (event) => {
-
-        event.preventDefault();
-        
+    villagerImage.addEventListener('click', (event) => {        
         const detVillImg = document.querySelector('.villager-image')
         detVillImg.src = villager.image_uri
         
@@ -45,37 +40,66 @@ function renderVillager(villager) {
         const detVillLikes = document.querySelector('.likes')
         detVillLikes.innerText = villager.likes
 
-
-        const likeBtn = document.querySelector('.likeBtn')
-        likeBtn.innerText = "Like ❤️"
-        document.getElementById("villager-detail").appendChild(likeBtn)
-        likeBtn.addEventListener("click", (event) => {
-            event.preventDefault();
-                console.log(villager.likes)
-            const oldLikes = document.querySelector('.likes')
-
-            const newLikes = +oldLikes.innerText + 1
-            oldLikes.innerText = newLikes
+        const detVillComments = document.getElementById('comment-display')
+        detVillComments.innerText = villager.comments
         })
 
-        const dislikeBtn = document.querySelector('.dislikeBtn')
-        dislikeBtn.innerText = "Dislike ❤️"
-        document.getElementById("villager-detail").appendChild(dislikeBtn)
-        dislikeBtn.addEventListener("click", (event) => {
-                event.preventDefault();
-                console.log(villager.likes)
-            const oldLikes = document.querySelector('.likes')
+    }
 
-            const newLikes = +oldLikes.innerText - 1
-            oldLikes.innerText = newLikes
 
-        })
+const likeBtn = document.querySelector('.likeBtn')
+likeBtn.innerText = "Like ❤️"
+document.getElementById("villager-detail").appendChild(likeBtn)
+likeBtn.addEventListener("click", (event) => {
+    const oldLikes = document.querySelector('.likes')
 
+    const newLikes = +oldLikes.innerText + 1
+    oldLikes.innerText = newLikes
+})
+
+const dislikeBtn = document.querySelector('.dislikeBtn')
+dislikeBtn.innerText = "Dislike ❤️"
+document.getElementById("villager-detail").appendChild(dislikeBtn)
+dislikeBtn.addEventListener("click", (event) => {
+    const oldLikes = document.querySelector('.likes')
+
+    const newLikes = +oldLikes.innerText - 1
+    oldLikes.innerText = newLikes
+})
+
+handleForm();
+
+function handleForm() {
+    // grab the form from the DOM
+    const newVillagerComment = document.getElementById('new-villager')
+    // add an addEventListener to the form
+    newVillagerComment.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const newComment = event.target.userInput.value
+        const commentArea = document.getElementById('userCommentArea')
+
+        commentArea.append(newComment)
+
+
+        // const userComment = {
+
+        //     comment: newComment
+        // }
+
+
+
+    //     fetch("http://localhost:3000/villagers", {
+    //         headers: { "Content-Type": "application/json" },
+    //         method: "POST",
+    //         body: JSON.stringify(userComment)
+    //     })
+    //         .then(r => r.json())
+    //         .then(newEntity => renderRamenImg(newEntity))
+    //         .catch(error => console.error(error))
+
+
+    //     event.target.reset()
+    // })
     })
-
 }
-
-function renderComments(villagers) {
-    console.log(villagers.comments)
-}
-renderComments()
