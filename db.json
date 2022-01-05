@@ -1,6 +1,6 @@
 {
-    "villagers":  [
-      {
+  "villagers": [
+    {
       "id": 1,
       "file-name": "cat02",
       "name": "Rosie",
@@ -209,6 +209,6 @@
       "image_uri": "https://acnhapi.com/v1/images/villagers/372",
       "likes": "0",
       "comments": "Cool"
-      }
-    ]
-  }
+    }
+  ]
+}

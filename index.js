@@ -74,20 +74,31 @@ function handleForm() {
     const newVillagerComment = document.getElementById('new-villager')
     // add an addEventListener to the form
     newVillagerComment.addEventListener('submit', (event) => {
+
+        const newComment = document.getElementById('comment-display')
+        newComment.innerText = event.target.userInput.value
+        
+
+        //commentArea.append(newComment)
+
+
+        let villagerObj  = {
+            // ["file-name"]: dog05,
+            // name: Baxter,
+            // personality: Happy,
+            // ["birthday-string"]: February 1,
+            // birthday: 2/2,
+            // species: Dog,
+            // gender: Male,
+            // icon_uri: https://acnhapi.com/v1/icons/villagers/43,
+            // image_uri: https://acnhapi.com/v1/images/villagers/43,
+            // likes: 5,
+            comments: newComment
+        }
+
+        updateComment(villagerObj);
+
         event.preventDefault();
-
-        const newComment = event.target.userInput.value
-        const commentArea = document.getElementById('userCommentArea')
-
-        commentArea.append(newComment)
-
-
-        // const userComment = {
-
-        //     comment: newComment
-        // }
-
-
 
     //     fetch("http://localhost:3000/villagers", {
     //         headers: { "Content-Type": "application/json" },
@@ -102,4 +113,21 @@ function handleForm() {
     //     event.target.reset()
     // })
     })
+}
+
+// function fetchData() {
+//     fetch("http://localhost:3000/villagers")
+//     .then(resp => resp.json())
+//     .then(data => data.forEach(renderVillager))
+// }
+
+function updateComment(villagerObj) {
+    fetch(`http://localhost:3000/villagers/${id}`,
+    {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json"},
+    body: JSON.stringify(villagerObj)
+    })
+    .then(res => res.json())
+    .then(villager => console.log(villager))
 }
