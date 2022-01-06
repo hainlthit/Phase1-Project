@@ -22,7 +22,6 @@ function renderVillager(villager) {
 
     villagerImage.addEventListener('click', (event) => {     
    
-        
         const detVillImg = document.querySelector('.villager-image')
         detVillImg.src = villager.image_uri
         
@@ -47,18 +46,18 @@ function renderVillager(villager) {
         const detVillComments = document.getElementById('comment-display')
         detVillComments.innerText = villager.comments
 
-
         })
 
+  
     }
 
 
+
 const likeBtn = document.querySelector('.likeBtn')
-likeBtn.innerText = " Like  ❤️ "
+likeBtn.innerText = "Like ❤️"
 document.getElementById("villager-detail").appendChild(likeBtn)
 likeBtn.addEventListener("click", (event) => {
     const oldLikes = document.querySelector('.likes')
-
     const newLikes = +oldLikes.innerText + 1
     oldLikes.innerText = newLikes
 })
@@ -68,10 +67,10 @@ dislikeBtn.innerText = "Dislike ✘"
 document.getElementById("villager-detail").appendChild(dislikeBtn)
 dislikeBtn.addEventListener("click", (event) => {
     const oldLikes = document.querySelector('.likes')
-
     const newLikes = +oldLikes.innerText - 1
     oldLikes.innerText = newLikes
 })
+
 
 
 handleForm();
@@ -106,9 +105,16 @@ function handleForm() {
             comments: newComment
         }
         
-        renderVillager(newVillager) 
+        fetch('http://localhost:3000/villagers', {
+            headers: { "Content-Type": "application/json" },
+            method: "POST",
+            body: JSON.stringify(newVillager)
+        })
+            .then(r => r.json())
+            .then(newEntity => renderVillager(newEntity))
+            .catch(error => console.error(error))
+
+
         event.target.reset()
-
-
     })
 }
