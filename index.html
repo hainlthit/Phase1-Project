@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jen & Hain Project</title>
+    <title>Animal Crossing Villager Finder - Jen & Hain Project</title>
     <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script defer src="/index.js"></script> 
 </head>
 
 <body>
-
-    <h1>Animal Crossing Friend Finder</h1>
+<div id="title-bar">
+  <img src="/images/animalcrossinglogo.png">
+    <h1>Animal Crossing Villager Finder</h1>
   
+</div>
+
   <!-- villager menu -->
   <div id="villager-menu">
   </div>
@@ -24,52 +27,66 @@
    <!-- where each villager and details will show up -->
     <div class="flex-container-1">
       <div id="villager-detail">
-        <img class="villager-image" alt="PLACEHOLDER" />
-        <h2 class="name">Insert Villager Name</h2>
-        <p class="gender">Gender</p>
-        <p class="species">Species</p>
-        <p class="personality">Personality</p>
-        <p class="birthday">Birthday</p>
+        <img class="villager-image" alt="PLACEHOLDER" src="/images/tomnook.png"/>
+        <h1 class="name">Hello !</h1>
+        <p class="gender"></p>
+        <p class="species">Welcome to the Official Homepage for <em><strong>Animal Crossing: New Horizons Village Finder!</em></p></strong></p>
+        <p class="personality">Come relax on our island and learn more about all of these cute villagers. You can even vote for your favorite ones!</p>
+        <p class="birthday">We hope you will share this with all of your friends and family and invite them to enjoy island life!</p>
+        <br>
         <h2>Popularity</h2>
         <p class="likes">Likes</p>
+        <br>
 
         <button class="likeBtn">Like</button>
         <button class="dislikeBtn">Dislike</button>
       </div>
+      
+         <!-- where the comments will show up -->
+      <div id ="new-comment-area">
+        <h2>Comments:</h2>
+        <p id='comment-display'>
+         Insert comment here
+       <div id="userCommentArea">
+       </div>
+        </p>
+      </div>
     </div>
 
     <div class="flex-container-2">
-    <!-- where the comments will show up -->
-     <div id ="new-comment-area">
-       <h3>Comment:</h3>
-        <p id='comment-display'>
-          Insert comment here
-        <div id="userCommentArea"></div>
-        </p>
-      </div>
   
     <!-- new villager form -->
+    <img class="leaf" src="/images/leaf.png"><br>
+    <h2>Add Your Fave Villager !</h2>
     <form id="new-villager">
-      <h4>Add your Fave!</h4>
-      <label for="name">Name: </label>
+      <label for="name" class="faveForm">Name: </label>
       <textarea name="new-name" id="userName"></textarea><br>
-      <label for="personality">Personality: </label>
+
+      <label for="personality" class="faveForm">Personality: </label>
       <textarea name="new-personality" id="userPersonality"></textarea><br>
-      <label for="bday">Birthday: </label>
+
+      <label for="bday" class="faveForm">Birthday: </label>
       <textarea name="new-bday" id="userBday"></textarea><br>
-      <label for="species">Species: </label>
+
+      <label for="species" class="faveForm">Species: </label>
       <textarea name="new-species" id="userSpecies"></textarea><br>
-      <label for="gender">Gender: </label>
+
+      <label for="gender" class="faveForm">Gender: </label>
       <textarea name="new-gender" id="userGender"></textarea><br>
-      <label for="iconuri">Icon: </label>
+
+      <label for="iconuri" class="faveForm">Icon: </label>
       <textarea name="new-icon" id="userIcon"></textarea><br>
-      <label for="image">Image: </label>
+
+      <label for="image" class="faveForm">Image: </label>
       <textarea name="new-image" id="userImage"></textarea><br>
-      <label for="likes">Likes: </label>
+
+      <label for="likes" class="faveForm">Likes: </label>
       <textarea name="new-likes" id="userLikes"></textarea><br>
-      <label for="comment">Comment: </label>
+
+      <label for="comment" class="faveForm">Comments: </label>
       <textarea name="new-comment" id="userInput"></textarea><br>
-      <input type="submit" value="Create" />
+
+      <input type="submit" value="Create" id="submitButton"/>
     </form>
   
     </div>

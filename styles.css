@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #7cc9c3
+  background-color: #7cc9c3;
 }
 
 
@@ -13,6 +13,36 @@ h1 {
   font-family: finkheavy;
   font-size: 3em;
   text-align: center;
+  text-shadow: 3px 3px grey;
+}
+
+h2 {
+  color: white;
+  font-family: finkheavy;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-family: finkheavy;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+
+
+/* logo and title code */
+
+#title-bar {
+  text-align: center;
+}
+
+#title-bar img {
+  width: 250px;
 }
 
 /* flexbox container code - how the page is split into two columns */
@@ -23,13 +53,18 @@ h1 {
 
 .flex-container-1 {
   flex: 1;
-  border: 1px solid yellow;
+  background-color: #017c74;
+  border-radius: 5%;
+  margin: 30px;
+  padding: 20px;
 }
 
 .flex-container-2 {
-  flex; 1;
-  border: 1px solid yellow;
-  margin-right: 30px;
+  flex: 1;
+  background-color: #017c74;
+  border-radius: 5%;
+  margin: 30px;
+  padding: 20px;
 }
 
 
@@ -57,7 +92,7 @@ z-index: 0;
     background-repeat: no-repeat;
     border-radius: 30%;
     background-color: #68b893;
-    
+    box-shadow: 1px 1px 5px 1px #909090;
   }
 
   #villager-menu img:hover {
@@ -74,6 +109,7 @@ z-index: 0;
 /* Code for the villager detail */
 
 #villager-detail {
+  padding-top: 50px;
   margin: 0 auto;
   width: 256px;
   text-align: center;
@@ -84,7 +120,13 @@ h2#villager-detail {
   font-family: finkheavy;
 }
 
+.villager-image {
+  height: 250px;
+  width: 150px;
+}
+
 button {
+  font-family: finkheavy;
   position: relative;
   background-color: #68b893;
   border: none;
@@ -95,10 +137,12 @@ button {
   font-size: 18px;
   justify-self: center;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 0px #909090;
 }
 
 button:hover {
+  font-family: finkheavy;
   background-color: #fcea64;
   color: #ff7c69;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
@@ -106,17 +150,47 @@ button:hover {
 
 
 /* Code for the comment area */
+
 #new-comment-area {
   text-align: center;
 }
 
-/* Code for comment form */
 
-#new-villager {
-  text-align: center;
+/* Code for new villager form */
+
+.flex-container-2 img {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+  }
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+textarea {
+  background-color: #7cc9c3;
+  border-color: white;
+  border-radius: 5%;
+  color: white;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+}
+
+.faveForm {
+  color: white;
+  text-align: left;
+  padding: 20px;
+
 }
 
 input[type=submit] {
+  font-family: finkheavy;
   position: relative;
   background-color: #68b893;
   border: none;
@@ -127,10 +201,24 @@ input[type=submit] {
   font-size: 18px;
   justify-self: center;
   padding: 10px;
+  box-shadow: 1px 1px 1px 0px #909090;
 }
 
 input[type=submit]:hover {
+  font-family: finkheavy;
   background-color: #fcea64;
   color: #ff7c69;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
+}
+
+
+.flex-container-2 {
+  padding-top: 50px;
+}
+
+#new-villager {
+  color: white;
+  font-family: finkheavy;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
 }
