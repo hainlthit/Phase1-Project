@@ -5,6 +5,9 @@
 
 body {
   background-color: #7cc9c3;
+  background-image: url(/images/greenleafbg.png);
+  background-size: 100px;
+
 }
 
 
@@ -18,7 +21,7 @@ h1 {
 
 h2 {
   color: white;
-  font-family: finkheavy;
+  font-family: Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -42,19 +45,20 @@ p {
 }
 
 #title-bar img {
-  width: 250px;
+  width: 300px;
 }
 
 /* flexbox container code - how the page is split into two columns */
 
 .flex-container {
   display: flex;
+  margin-top: 30px;
 }
 
 .flex-container-1 {
   flex: 1;
   background-color: #017c74;
-  border-radius: 5%;
+  border-radius: 3%;
   margin: 30px;
   padding: 20px;
 }
@@ -62,7 +66,7 @@ p {
 .flex-container-2 {
   flex: 1;
   background-color: #017c74;
-  border-radius: 5%;
+  border-radius: 3%;
   margin: 30px;
   padding: 20px;
 }
@@ -92,7 +96,7 @@ z-index: 0;
     background-repeat: no-repeat;
     border-radius: 30%;
     background-color: #68b893;
-    box-shadow: 1px 1px 5px 1px #909090;
+    box-shadow: 3px 3px 10px 3px #909090;
   }
 
   #villager-menu img:hover {
@@ -108,6 +112,10 @@ z-index: 0;
 
 /* Code for the villager detail */
 
+.gender, .species, .personality, .birthday {
+  font-size: 20px;
+}
+
 #villager-detail {
   padding-top: 50px;
   margin: 0 auto;
@@ -121,8 +129,8 @@ h2#villager-detail {
 }
 
 .villager-image {
-  height: 250px;
-  width: 150px;
+  height: 290px;
+  width: 250px;
 }
 
 button {
@@ -138,7 +146,7 @@ button {
   justify-self: center;
   padding: 10px;
   margin: 10px;
-  box-shadow: 1px 1px 1px 0px #909090;
+  box-shadow: 3px 3px 2px 0px #909090;
 }
 
 button:hover {
@@ -146,6 +154,16 @@ button:hover {
   background-color: #fcea64;
   color: #ff7c69;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
+}
+
+.popularityTitle {
+  font-size: 25px;
+  font-family: finkheavy;
+}
+
+.commentTitle {
+  font-size: 25px;
+  font-family: finkheavy;
 }
 
 
@@ -158,11 +176,15 @@ button:hover {
 
 /* Code for new villager form */
 
-.flex-container-2 img {
-    text-align: center;
-    width: 200px;
-    height: 200px;
-  }
+#newTitle {
+  padding-top: 20px;
+}
+
+#addFaveTitle {
+  font-size: 28px;
+  font-family: finkheavy;
+  text-shadow: 3px 3px grey;
+}
 
 form {
   width: 90%;
@@ -175,6 +197,9 @@ textarea {
   border-radius: 5%;
   color: white;
   display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 10px;
 }
 
 label {
@@ -186,7 +211,7 @@ label {
   color: white;
   text-align: left;
   padding: 20px;
-
+  font-size: 25px;
 }
 
 input[type=submit] {
@@ -201,7 +226,7 @@ input[type=submit] {
   font-size: 18px;
   justify-self: center;
   padding: 10px;
-  box-shadow: 1px 1px 1px 0px #909090;
+  box-shadow: 3px 3px 2px 0px #909090;
 }
 
 input[type=submit]:hover {
@@ -213,7 +238,7 @@ input[type=submit]:hover {
 
 
 .flex-container-2 {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 #new-villager {

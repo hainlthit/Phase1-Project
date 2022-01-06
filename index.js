@@ -54,11 +54,7 @@ function renderVillager(villager) {
 
 
 const likeBtn = document.querySelector('.likeBtn')
-<<<<<<< HEAD
 likeBtn.innerText = "Like  ❤️"
-=======
-likeBtn.innerText = "Like ❤️"
->>>>>>> 9a6a64b4e26166bd1b3120db5b1ca86908f395f1
 document.getElementById("villager-detail").appendChild(likeBtn)
 likeBtn.addEventListener("click", (event) => {
     const oldLikes = document.querySelector('.likes')

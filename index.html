@@ -27,15 +27,15 @@
    <!-- where each villager and details will show up -->
     <div class="flex-container-1">
       <div id="villager-detail">
-        <img class="villager-image" alt="PLACEHOLDER" src="/images/tomnook.png"/>
+        <img class="villager-image" alt="villager-image" src="/images/tomnook.png"/>
         <h1 class="name">Hello !</h1>
-        <p class="gender"></p>
-        <p class="species">Welcome to the Official Homepage for <em><strong>Animal Crossing: New Horizons Village Finder!</em></p></strong></p>
-        <p class="personality">Come relax on our island and learn more about all of these cute villagers. You can even vote for your favorite ones!</p>
-        <p class="birthday">We hope you will share this with all of your friends and family and invite them to enjoy island life!</p>
+        <h2 class="gender"></h2>
+        <h2 class="species">Welcome to the Official Homepage for <em><strong>Animal Crossing: New Horizons Village Finder!</em></strong></h2>
+        <h2 class="personality">Come relax on our island and learn more about all of these cute villagers. You can even vote for your favorite ones!</h2>
+        <h2 class="birthday">We hope you will share this with all of your friends and family and invite them to enjoy island life!</h2>
         <br>
-        <h2>Popularity</h2>
-        <p class="likes">Likes</p>
+        <h2 class="popularityTitle">Popularity</h2>
+        <h2 class="likes">-</h2>
         <br>
 
         <button class="likeBtn">Like</button>
@@ -44,9 +44,9 @@
       
          <!-- where the comments will show up -->
       <div id ="new-comment-area">
-        <h2>Comments:</h2>
-        <p id='comment-display'>
-         Insert comment here
+        <h2 class="commentTitle">Comments:</h2>
+        <h2 id='comment-display'>
+         -
        <div id="userCommentArea">
        </div>
         </p>
@@ -54,42 +54,45 @@
     </div>
 
     <div class="flex-container-2">
-  
-    <!-- new villager form -->
-    <img class="leaf" src="/images/leaf.png"><br>
-    <h2>Add Your Fave Villager !</h2>
-    <form id="new-villager">
-      <label for="name" class="faveForm">Name: </label>
-      <textarea name="new-name" id="userName"></textarea><br>
 
-      <label for="personality" class="faveForm">Personality: </label>
-      <textarea name="new-personality" id="userPersonality"></textarea><br>
+     <!-- new villager form -->
+     <div id="newTitle">
+      <h2 id="addFaveTitle">Add Your Fave Villager !</h2>
+     </div>
 
-      <label for="bday" class="faveForm">Birthday: </label>
-      <textarea name="new-bday" id="userBday"></textarea><br>
+     <div id="newForm">
+      <form id="new-villager">
+        <label for="name" class="faveForm">Name: </label>
+        <textarea name="new-name" id="userName"></textarea><br>
 
-      <label for="species" class="faveForm">Species: </label>
-      <textarea name="new-species" id="userSpecies"></textarea><br>
+        <label for="personality" class="faveForm">Personality: </label>
+        <textarea name="new-personality" id="userPersonality"></textarea><br>
 
-      <label for="gender" class="faveForm">Gender: </label>
-      <textarea name="new-gender" id="userGender"></textarea><br>
+        <label for="bday" class="faveForm">Birthday: </label>
+        <textarea name="new-bday" id="userBday"></textarea><br>
 
-      <label for="iconuri" class="faveForm">Icon: </label>
-      <textarea name="new-icon" id="userIcon"></textarea><br>
+        <label for="species" class="faveForm">Species: </label>
+        <textarea name="new-species" id="userSpecies"></textarea><br>
 
-      <label for="image" class="faveForm">Image: </label>
-      <textarea name="new-image" id="userImage"></textarea><br>
+        <label for="gender" class="faveForm">Gender: </label>
+        <textarea name="new-gender" id="userGender"></textarea><br>
 
-      <label for="likes" class="faveForm">Likes: </label>
-      <textarea name="new-likes" id="userLikes"></textarea><br>
+        <label for="iconuri" class="faveForm">Icon: </label>
+        <textarea name="new-icon" id="userIcon"></textarea><br>
 
-      <label for="comment" class="faveForm">Comments: </label>
-      <textarea name="new-comment" id="userInput"></textarea><br>
+        <label for="image" class="faveForm">Image: </label>
+        <textarea name="new-image" id="userImage"></textarea><br>
 
-      <input type="submit" value="Create" id="submitButton"/>
-    </form>
-  
+        <label for="likes" class="faveForm">Likes: </label>
+        <textarea name="new-likes" id="userLikes"></textarea><br>
+
+        <label for="comment" class="faveForm">Comments: </label>
+        <textarea name="new-comment" id="userInput"></textarea><br>
+
+        <input type="submit" value="Create" id="submitButton"/>
+      </form>
     </div>
+  </div>
   </div>
 
   </body>
