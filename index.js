@@ -73,6 +73,7 @@ dislikeBtn.addEventListener("click", (event) => {
     oldLikes.innerText = newLikes
 })
 
+
 handleForm();
 
 function handleForm() {
@@ -81,28 +82,33 @@ function handleForm() {
     // add an addEventListener to the form
     newVillagerComment.addEventListener('submit', (event) => {
         event.preventDefault()
-        const newComment = document.getElementById('comment-display')
-        newComment.innerText = event.target.userInput.value
+
+
+        const newName = event.target['userName'].value
+        const newPersonality = event.target['userPersonality'].value
+        const newBday = event.target['userBday'].value
+        const newSpecies = event.target['userSpecies'].value
+        const newGender = event.target['userGender'].value
+        const newIcon = event.target['userIcon'].value
+        const newImage = event.target['userImage'].value
+        const newLikes = event.target['userLikes'].value
+        const newComment = event.target['userInput'].value
+
+        const newVillager = {
+            name: newName,
+            personality: newPersonality,
+            birthday: newBday,
+            species: newSpecies,
+            gender: newGender,
+            icon_uri: newIcon,
+            image_uri: newImage,
+            likes: newLikes,
+            comments: newComment
+        }
         
-
-    //     fetch("http://localhost:3000/villagers", {
-    //         headers: { "Content-Type": "application/json" },
-    //         method: "POST",
-    //         body: JSON.stringify(userComment)
-    //     })
-    //         .then(r => r.json())
-    //         .then(newEntity => renderRamenImg(newEntity))
-    //         .catch(error => console.error(error))
+        renderVillager(newVillager) 
+        event.target.reset()
 
 
-    //     event.target.reset()
-    // })
     })
 }
-
-// function fetchData() {
-//     fetch("http://localhost:3000/villagers")
-//     .then(resp => resp.json())
-//     .then(data => data.forEach(renderVillager))
-// }
-
