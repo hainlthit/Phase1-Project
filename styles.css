@@ -3,12 +3,20 @@
   src: url(fonts/FinkHeavy.woff2);
 }
 
-h1 {
-  font-family: finkheavy;
-  font-size: 3em;
+body {
+  background-color: #7cc9c3
 }
 
 
+h1 {
+  color: white;
+  font-family: finkheavy;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+/* Code for the villager icon menu */
 
 #villager-menu img:hover{
 z-index: 0;
@@ -26,27 +34,37 @@ z-index: 0;
     height: 150px;
     margin-right: 0.5rem;
     cursor: pointer;
-    background-image: url(https://m.media-amazon.com/images/I/31NXhN9iZoL._AC_SY355_.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 30%;
+    background-color: #68b893;
+  }
+
+  #villager-menu img:hover {
+    background-color: #fcea64;
   }
   
   #villager-menu img:last-child {
     margin-right: 0;
   }
+  
+  
 
-  #villager-detail {
-    margin: 0 auto;
-    width: 256px;
-  }
+/* Code for the villager detail */
 
-  h2.name {
-    font-family: finkheavy;
-  }
-  
-  
-  
-  
+#villager-detail {
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+}
+
+h2#villager-detail {
+  color: white;
+  font-family: finkheavy;
+}
+
+
+
   
   
   

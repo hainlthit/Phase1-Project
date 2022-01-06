@@ -64,7 +64,7 @@ likeBtn.addEventListener("click", (event) => {
 })
 
 const dislikeBtn = document.querySelector('.dislikeBtn')
-dislikeBtn.innerText = "Dislike ❤️"
+dislikeBtn.innerText = "Dislike ✘"
 document.getElementById("villager-detail").appendChild(dislikeBtn)
 dislikeBtn.addEventListener("click", (event) => {
     const oldLikes = document.querySelector('.likes')
