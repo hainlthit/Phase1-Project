@@ -1,7 +1,23 @@
+@font-face {
+  font-family: finkheavy;
+  src: url(fonts/FinkHeavy.woff2);
+}
+
+h1 {
+  font-family: finkheavy;
+  font-size: 3em;
+}
+
+
+
+#villager-menu img:hover{
+z-index: 0;
+}
+
 #villager-menu {
     display: flex;
     overflow-x: auto;
-    margin: 1rem 0;
+    margin: 1rem 0;   
     max-width: calc(100vw - 2rem);
   }
   
@@ -10,10 +26,22 @@
     height: 150px;
     margin-right: 0.5rem;
     cursor: pointer;
+    background-image: url(https://m.media-amazon.com/images/I/31NXhN9iZoL._AC_SY355_.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   
   #villager-menu img:last-child {
     margin-right: 0;
+  }
+
+  #villager-detail {
+    margin: 0 auto;
+    width: 256px;
+  }
+
+  h2.name {
+    font-family: finkheavy;
   }
   
   

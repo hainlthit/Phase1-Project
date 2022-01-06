@@ -10,15 +10,19 @@ function renderVillager(villager) {
     const villagerMenu = document.getElementById('villager-menu')
     const villagerImage = document.createElement('img')
     villagerImage.src = villager.icon_uri
+    
 
-    const villagerName = document.createElement('h1')
+    const villagerName = document.createElement('div')
     villagerName.innerHTML = villager.name
+    villagerName.classList.add("reveal")
 
     villagerMenu.appendChild(villagerImage)
     //villagerMenu.appendChild(villagerName)
     // consider mouse-over event to show names
 
-    villagerImage.addEventListener('click', (event) => {        
+    villagerImage.addEventListener('click', (event) => {     
+   
+        
         const detVillImg = document.querySelector('.villager-image')
         detVillImg.src = villager.image_uri
         
@@ -26,22 +30,24 @@ function renderVillager(villager) {
         detVillName.innerText = villager.name
 
         const detVillGender = document.querySelector('.gender')
-        detVillGender.innerText = villager.gender
+        detVillGender.innerText = `Sex: ${villager.gender}`
 
         const detVillSpecies = document.querySelector('.species')
-        detVillSpecies.innerText = villager.species
+        detVillSpecies.innerText = `Species: ${villager.species}`
 
         const detVillPersonality = document.querySelector('.personality')
-        detVillPersonality.innerText = villager.personality
+        detVillPersonality.innerText = `Personality: ${villager.personality}`
 
         const detVillBirthday = document.querySelector('.birthday')
-        detVillBirthday.innerText = villager.birthday
+        detVillBirthday.innerText = `Birthday: ${villager.birthday}`
 
         const detVillLikes = document.querySelector('.likes')
         detVillLikes.innerText = villager.likes
 
         const detVillComments = document.getElementById('comment-display')
         detVillComments.innerText = villager.comments
+
+
         })
 
     }
@@ -74,31 +80,10 @@ function handleForm() {
     const newVillagerComment = document.getElementById('new-villager')
     // add an addEventListener to the form
     newVillagerComment.addEventListener('submit', (event) => {
-
+        event.preventDefault()
         const newComment = document.getElementById('comment-display')
         newComment.innerText = event.target.userInput.value
         
-
-        //commentArea.append(newComment)
-
-
-        let villagerObj  = {
-            // ["file-name"]: dog05,
-            // name: Baxter,
-            // personality: Happy,
-            // ["birthday-string"]: February 1,
-            // birthday: 2/2,
-            // species: Dog,
-            // gender: Male,
-            // icon_uri: https://acnhapi.com/v1/icons/villagers/43,
-            // image_uri: https://acnhapi.com/v1/images/villagers/43,
-            // likes: 5,
-            comments: newComment
-        }
-
-        updateComment(villagerObj);
-
-        event.preventDefault();
 
     //     fetch("http://localhost:3000/villagers", {
     //         headers: { "Content-Type": "application/json" },
@@ -121,13 +106,3 @@ function handleForm() {
 //     .then(data => data.forEach(renderVillager))
 // }
 
-function updateComment(villagerObj) {
-    fetch(`http://localhost:3000/villagers/${id}`,
-    {
-    method: "PATCH",
-    headers: { "Content-Type": "application/json"},
-    body: JSON.stringify(villagerObj)
-    })
-    .then(res => res.json())
-    .then(villager => console.log(villager))
-}
