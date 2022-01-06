@@ -15,6 +15,24 @@ h1 {
   text-align: center;
 }
 
+/* flexbox container code - how the page is split into two columns */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-1 {
+  flex: 1;
+  border: 1px solid yellow;
+}
+
+.flex-container-2 {
+  flex; 1;
+  border: 1px solid yellow;
+  margin-right: 30px;
+}
+
+
 
 /* Code for the villager icon menu */
 
@@ -27,6 +45,7 @@ z-index: 0;
     overflow-x: auto;
     margin: 1rem 0;   
     max-width: calc(100vw - 2rem);
+    padding: 10px;
   }
   
   #villager-menu img {
@@ -38,10 +57,12 @@ z-index: 0;
     background-repeat: no-repeat;
     border-radius: 30%;
     background-color: #68b893;
+    
   }
 
   #villager-menu img:hover {
     background-color: #fcea64;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
   }
   
   #villager-menu img:last-child {
@@ -63,11 +84,53 @@ h2#villager-detail {
   font-family: finkheavy;
 }
 
+button {
+  position: relative;
+  background-color: #68b893;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #fcea64;
+  color: #ff7c69;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
+}
 
 
-  
-  
-  
-  
-  
-  
+/* Code for the comment area */
+#new-comment-area {
+  text-align: center;
+}
+
+/* Code for comment form */
+
+#new-villager {
+  text-align: center;
+}
+
+input[type=submit] {
+  position: relative;
+  background-color: #68b893;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  padding: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #fcea64;
+  color: #ff7c69;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.19);
+}

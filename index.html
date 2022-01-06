@@ -13,42 +13,53 @@
 
     <h1>Animal Crossing Friend Finder</h1>
   
-  
-    <div id="villager-menu">
-     
-    </div>
-  
-   
-    <div id="villager-detail">
-      <img class="villager-image" alt="PLACEHOLDER" />
-      <h2 class="name">Insert Villager Name</h2>
-      <p class="gender">Gender</p>
-      <p class="species">Species</p>
-      <p class="personality">Personality</p>
-      <p class="birthday">Birthday</p>
-      <h2>Popularity</h2>
-      <p class="likes">Likes</p>
+  <!-- villager menu -->
+  <div id="villager-menu">
+  </div>
 
-      <button class="likeBtn">Like</button>
-      <button class="dislikeBtn">Dislike</button>
-    </div>
-  
 
-    <h3>Comment:</h3>
-    <p id='comment-display'>
-      Insert comment here
-    <div id="userCommentArea"></div>
-    </p>
+
+  <div class="flex-container">
+  
+   <!-- where each villager and details will show up -->
+    <div class="flex-container-1">
+      <div id="villager-detail">
+        <img class="villager-image" alt="PLACEHOLDER" />
+        <h2 class="name">Insert Villager Name</h2>
+        <p class="gender">Gender</p>
+        <p class="species">Species</p>
+        <p class="personality">Personality</p>
+        <p class="birthday">Birthday</p>
+        <h2>Popularity</h2>
+        <p class="likes">Likes</p>
+
+        <button class="likeBtn">Like</button>
+        <button class="dislikeBtn">Dislike</button>
+      </div>
+    </div>
+
+    <div class="flex-container-2">
+    <!-- where the comments will show up -->
+     <div id ="new-comment-area">
+       <h3>Comment:</h3>
+        <p id='comment-display'>
+          Insert comment here
+        <div id="userCommentArea"></div>
+        </p>
+      </div>
   
     <!-- new villager form -->
-    <form id="new-villager">
-      <h4>Leave a Comment</h4>
+      <form id="new-villager">
+        <h4>Leave a Comment</h4>
       
-      <label for="new-comment">Comment: </label>
-      <textarea name="new-comment" id="userInput"></textarea><br>
-      <input type="submit" value="Create" />
-    </form>
+        <label for="new-comment">Comment: </label>
+        <textarea name="new-comment" id="userInput"></textarea><br>
+        <input type="submit" value="Submit" />
+      </form>
   
+    </div>
+  </div>
+
   </body>
 
 </html>
